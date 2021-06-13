@@ -1,0 +1,32 @@
+.about-intro .container {
+    max-width: 100%;
+    background-image: url(../images/about-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.about-intro__heading {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    padding: 72px 0;
+    margin: 0;
+    margin-left: 165px;
+}
+
+@media only screen and (max-width: 710px){
+    .about-intro .container{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .about-intro__heading{
+        margin: 0 auto;
+    }
+}

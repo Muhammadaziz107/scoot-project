@@ -41,6 +41,10 @@
     text-decoration: none;
 }
 
+.footer__social-link + .footer__social-link{
+    margin-left: 12px;
+}
+
 .footer__span{
     margin-left: auto;
 }

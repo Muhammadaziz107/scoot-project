@@ -1,7 +1,9 @@
 .header {
-    // position: fixed;
-    // width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -83,6 +85,14 @@
         margin-top: 21px;
     }
 
+    .header__nav{
+        display: none;
+    }
+
+    .header .button-link{
+        display: none;
+    }
+
     .header--adaptive .header__nav {
         display: none;
         position: fixed;
@@ -102,6 +112,7 @@
 
     .header__logo-link {
         margin: 0 auto;
+        margin-bottom: 25px;
     }
 
     .hamburger-btn {

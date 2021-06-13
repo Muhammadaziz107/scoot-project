@@ -1,0 +1,203 @@
+.about-good .container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.about-good__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-good__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.about-good__item:nth-child(2n) .about-good__span{
+    order: 1;
+}
+
+.about-good__span {
+    width: 100%;
+    max-width: 450px;
+}
+
+.about-good__span__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.about-good__span__text {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.about-good__item img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+.about-good__item:nth-child(1)::before{
+    position: absolute;
+    left: 52.5%;
+    content: '';
+    width: 100%;
+    max-width: 65%;
+    height: 160px;
+    z-index: 10;
+    background-image: url(../images/strelka1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(90%);
+}
+
+.about-good__item:nth-child(1)::after{
+    position: absolute;
+    left: 111%;
+    content: '';
+    width: 100px;
+    height: 450px;
+    background-image: url(../images/group14.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-good__item:nth-child(2)::before{
+    position: absolute;
+    right: 70%;
+    content: '';
+    width: 50%;
+    max-width: 50%;
+    height: 250px;
+    background-image: url(../images/strelka2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-60%);
+}
+
+.about-good__item:nth-child(2)::after{
+    position: absolute;
+    right: 111%;
+    content: '';
+    width: 100px;
+    height: 450px;
+    background-image: url(../images/group15.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1490px){
+    .about-good .container{
+        width: 100%;
+        max-width: 1110px;
+    }
+
+    // .about-good__item{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+   
+
+    .about-good__item:nth-child(1)::before{
+        position: absolute;
+        left: 52.5%;
+        content: '';
+        width: 100%;
+        max-width: 64%;
+        height: 160px;
+        z-index: 10;
+        background-image: url(../images/strelka1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(90%);
+    }
+    
+    .about-good__item:nth-child(1)::after{
+        position: absolute;
+        left: 107%;
+        content: '';
+        width: 100px;
+        height: 450px;
+        background-image: url(../images/group14.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media only screen and (max-width: 1440px){
+    .about-good__item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 160px;
+    }
+
+    .about-good__item img{
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .about-good__item:nth-child(1)::before{
+        top: 50%;
+        left: 35%;
+    }
+    
+    .about-good__item:nth-child(1)::after{
+        left: 90%;
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .about-good__item::after{
+        display: none;
+    }
+
+    .about-good__item img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+
+    .about-good__item img{
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+    .about-good__item:nth-child(1)::before{
+        top: 50%;
+        max-width: 300;
+        height: 75px;
+    }
+
+
+    .about-good__item:nth-child(2)::before{
+        top: 60%;
+        max-width: 300px;
+        height: 75px;
+    }
+
+    .about-good__span__heading{
+        font-size: 32px;
+    }
+}
