@@ -79,10 +79,14 @@
     z-index: 11;
 }
 
+.hamburger--btn__img--exit{
+    display: none;
+}
+
 
 @media only screen and (max-width: 710px) {
     .header .container {
-        margin-top: 21px;
+        margin-top: 22px;
     }
 
     .header__nav{
@@ -94,20 +98,38 @@
     }
 
     .header--adaptive .header__nav {
-        display: none;
+        display: block;
         position: fixed;
-        top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: auto;
+        top: 0;
+        width: 70%;
+        height: 100%;
         z-index: 10;
-        margin: 0;
+        margin: 75px auto;
+        background-color: #333A44;
     }
 
+    .header--adaptive .header__nav__ul{
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        text-align: left;
+    }
+
+    .header--adaptive .nav__list-item{
+        padding: 15px 0;
+    }
+
+
     .header--adaptive .button-link {
-        display: none;
+        display: block;
+        position: fixed;
+        top: 80%;
+        z-index: 11;
+        margin: 0 auto;
+        margin-right: 20px;
+        margin-left: 50px;
+        transform: translateX(25%);
     }
 
     .header__logo-link {
@@ -115,8 +137,49 @@
         margin-bottom: 25px;
     }
 
-    .hamburger-btn {
+    .hamburger-btn{
         display: block;
     }
+   
 
 }
+
+@media only screen and (max-width: 600px){
+    .header--adaptive .button-link {
+        display: block;
+        position: fixed;
+        top: 80%;
+        z-index: 11;
+        margin: 0 auto;
+        margin-right: 20px;
+        margin-left: 50px;
+        transform: translateX(-5%);
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .header--adaptive .button-link {
+        display: block;
+        position: fixed;
+        top: 80%;
+        z-index: 11;
+        margin: 0 auto;
+        // margin-right: 90%;
+        // margin-left: 50px;
+        transform: translateX(-1%);
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .header--adaptive .button-link {
+        display: block;
+        position: fixed;
+        top: 80%;
+        z-index: 11;
+        margin: 0 auto;
+        margin-left: -15px;
+        transform: translateX(-1%);
+    }
+}
+

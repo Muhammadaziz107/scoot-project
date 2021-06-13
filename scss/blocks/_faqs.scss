@@ -3,6 +3,16 @@
     padding: 0 20px;
 }
 
+.faqs__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    margin-bottom: 64px;
+}
+
 .faqs__div-one {
     display: flex;
 }
@@ -38,7 +48,7 @@
     border: none;
 }
 
-.faqs__btn:hover{
+.faqs__btn:hover {
     background-color: #FFF4DF;
 }
 
@@ -59,63 +69,63 @@
     padding: 0 20px;
 }
 
-.faqs__btn--active .btn__text{
-    display:block;
+.faqs__btn--active .btn__text {
+    display: block;
 }
 
-.faqs__div-two{
+.faqs__div-two {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 
-@media only screen and (max-width: 1030px){
-    .faqs__div-one{
+@media only screen and (max-width: 1030px) {
+    .faqs__div-one {
         display: flex;
         flex-direction: column;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
-    .faqs__div-two{
+    .faqs__div-two {
         display: flex;
         flex-direction: column;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
-    .div-one__span{
+    .div-one__span {
         margin: 30px auto;
     }
 
-    .div-two__span{
+    .div-two__span {
         margin: 30px auto;
-        
+
     }
 
-    .faqs__btn{
+    .faqs__btn {
         margin: 15px auto;
     }
 
-    .div-one__heading{
+    .div-one__heading {
         margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 571px){
-    .btn__heading{
+@media only screen and (max-width: 571px) {
+    .btn__heading {
         font-size: 20px;
     }
 
-    .div-one__heading{
+    .div-one__heading {
         font-size: 26px;
     }
 
-    .div-two__heading{
+    .div-two__heading {
         font-size: 26px;
     }
 }
 
-@media only screen and (max-width: 410px){
-    .btn__heading{
+@media only screen and (max-width: 410px) {
+    .btn__heading {
         font-size: 18px;
         margin-right: 15px;
     }
