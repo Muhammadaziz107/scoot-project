@@ -1,0 +1,122 @@
+.careers__section-one {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.careers__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.careers__list-item {
+    // width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.careers__span {
+    width: 100%;
+    max-width: 450px;
+}
+
+.careers__img {
+    margin-left: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.careers__list-item__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.careers__list-item__text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 40px;
+}
+
+.careers__link {
+    padding: 14px 49px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FCB72B;
+    border: 2px solid #FCB72B;
+
+}
+
+.careers__link:hover {
+    color: #FCB72B;
+    background-color: white;
+    border: 2px solid #FCB72B;
+}
+
+@media only screen and (max-width: 930px){
+      .careers__list-item{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;    
+            text-align: center; 
+        }
+
+        .careers__span{
+            margin: 0 auto;
+        }
+
+        .careers__img{
+            order: -1;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+}
+
+@media only screen and (max-width: 500px){
+    .careers__section-one{
+        margin-top: 80px;
+    }
+
+      .careers__img{
+          width: 100%;
+          max-width: 350px;
+          height: 350px;
+      }
+}
+
+@media only screen and (max-width: 400px){
+    .careers__img{
+        width: 100%;
+        max-width: 311px;
+        height: 311px;
+    }
+
+    .careers__list-item__heading{
+        font-size: 32px;
+    }
+
+    .careers__list-item__text{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    .careers__img{
+        margin: 0;
+        width: 100%;
+        max-width: 290px;
+        height: 290px;
+    }
+}
